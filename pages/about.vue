@@ -1,11 +1,14 @@
 <template>
-  <ContactHero />
+  <div class="bg-white">
+    <AboutHero />
+    <AboutMission />
+    <AboutStory />
+    <AboutValues />
+    <AboutTeam />
+    <LandingCTA />
+  </div>
 </template>
 
-
-
-<script>
+<script setup>
+// Components are auto-imported by Nuxt
 </script>
-
-<style>
-</style>

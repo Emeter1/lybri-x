@@ -48,7 +48,7 @@
 const navLinks = [
   { name: "Home", href: "/" },
    { name: "Explore", href: "/explore" },
-  { name: "About Us", href: "/about-us" },
+  { name: "About Us", href: "/about" },
   { name: "Contact Us", href: "/contact-us" },
 ];
 </script>

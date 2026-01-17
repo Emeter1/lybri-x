@@ -14,6 +14,11 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  'AboutHero': typeof import("../../components/About/Hero.vue").default
+  'AboutMission': typeof import("../../components/About/Mission.vue").default
+  'AboutStory': typeof import("../../components/About/Story.vue").default
+  'AboutTeam': typeof import("../../components/About/Team.vue").default
+  'AboutValues': typeof import("../../components/About/Values.vue").default
   'ContactHero': typeof import("../../components/Contact/Hero.vue").default
   'ExploreRecommended': typeof import("../../components/Explore/Recommended.vue").default
   'ExploreSearch': typeof import("../../components/Explore/Search.vue").default
@@ -52,6 +57,11 @@ interface _GlobalComponents {
   'Html': typeof import("../../node_modules/nuxt/dist/head/runtime/components").Html
   'Body': typeof import("../../node_modules/nuxt/dist/head/runtime/components").Body
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island").default
+  'LazyAboutHero': LazyComponent<typeof import("../../components/About/Hero.vue").default>
+  'LazyAboutMission': LazyComponent<typeof import("../../components/About/Mission.vue").default>
+  'LazyAboutStory': LazyComponent<typeof import("../../components/About/Story.vue").default>
+  'LazyAboutTeam': LazyComponent<typeof import("../../components/About/Team.vue").default>
+  'LazyAboutValues': LazyComponent<typeof import("../../components/About/Values.vue").default>
   'LazyContactHero': LazyComponent<typeof import("../../components/Contact/Hero.vue").default>
   'LazyExploreRecommended': LazyComponent<typeof import("../../components/Explore/Recommended.vue").default>
   'LazyExploreSearch': LazyComponent<typeof import("../../components/Explore/Search.vue").default>

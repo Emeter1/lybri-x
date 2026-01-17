@@ -14,6 +14,11 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const AboutHero: typeof import("../components/About/Hero.vue").default
+export const AboutMission: typeof import("../components/About/Mission.vue").default
+export const AboutStory: typeof import("../components/About/Story.vue").default
+export const AboutTeam: typeof import("../components/About/Team.vue").default
+export const AboutValues: typeof import("../components/About/Values.vue").default
 export const ContactHero: typeof import("../components/Contact/Hero.vue").default
 export const ExploreRecommended: typeof import("../components/Explore/Recommended.vue").default
 export const ExploreSearch: typeof import("../components/Explore/Search.vue").default
@@ -52,6 +57,11 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components").Html
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components").Body
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island").default
+export const LazyAboutHero: LazyComponent<typeof import("../components/About/Hero.vue").default>
+export const LazyAboutMission: LazyComponent<typeof import("../components/About/Mission.vue").default>
+export const LazyAboutStory: LazyComponent<typeof import("../components/About/Story.vue").default>
+export const LazyAboutTeam: LazyComponent<typeof import("../components/About/Team.vue").default>
+export const LazyAboutValues: LazyComponent<typeof import("../components/About/Values.vue").default>
 export const LazyContactHero: LazyComponent<typeof import("../components/Contact/Hero.vue").default>
 export const LazyExploreRecommended: LazyComponent<typeof import("../components/Explore/Recommended.vue").default>
 export const LazyExploreSearch: LazyComponent<typeof import("../components/Explore/Search.vue").default>
