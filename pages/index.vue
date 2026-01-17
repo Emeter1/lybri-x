@@ -5,11 +5,7 @@
 <template>
   <div class="min-h-screen font-sans selection:bg-yellow-400/30">
     <div class="bg-white">
-      <LandingHero>
-        <template #navbar>
-          <LandingNavbar />
-        </template>
-      </LandingHero>
+      <LandingHero> </LandingHero>
 
       <LandingCast />
       <LandingStoryPath />
@@ -18,7 +14,6 @@
       <LandingTestimonials />
       <LandingAbout />
       <LandingCTA />
-      <LandingFooter />
     </div>
   </div>
 </template>

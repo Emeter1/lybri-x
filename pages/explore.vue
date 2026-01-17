@@ -4,16 +4,12 @@
 
 <template>
   <div class="min-h-screen bg-[#FDFCF9] font-sans selection:bg-yellow-400/30">
-    <LandingNavbar />
-
     <main class="max-w-7xl mx-auto px-6 py-12">
       <ExploreHeader />
       <ExploreSearch />
       <ExploreRecommended />
       <ExploreTrending />
     </main>
-
-    <LandingFooter />
   </div>
 </template>
 

@@ -14,23 +14,21 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
-  'ExploreHeader': typeof import("../../components/ExploreHeader.vue").default
-  'ExplorePage': typeof import("../../components/ExplorePage.vue").default
-  'ExploreRecommended': typeof import("../../components/ExploreRecommended.vue").default
-  'ExploreSearch': typeof import("../../components/ExploreSearch.vue").default
-  'ExploreTrending': typeof import("../../components/ExploreTrending.vue").default
-  'HelloWorld': typeof import("../../components/HelloWorld.vue").default
-  'LandingAbout': typeof import("../../components/LandingAbout.vue").default
-  'LandingCTA': typeof import("../../components/LandingCTA.vue").default
-  'LandingCast': typeof import("../../components/LandingCast.vue").default
-  'LandingCollection': typeof import("../../components/LandingCollection.vue").default
-  'LandingFeatures': typeof import("../../components/LandingFeatures.vue").default
-  'LandingFooter': typeof import("../../components/LandingFooter.vue").default
-  'LandingHero': typeof import("../../components/LandingHero.vue").default
-  'LandingNavbar': typeof import("../../components/LandingNavbar.vue").default
-  'LandingPage': typeof import("../../components/LandingPage.vue").default
-  'LandingStoryPath': typeof import("../../components/LandingStoryPath.vue").default
-  'LandingTestimonials': typeof import("../../components/LandingTestimonials.vue").default
+  'ContactHero': typeof import("../../components/Contact/Hero.vue").default
+  'ExploreRecommended': typeof import("../../components/Explore/Recommended.vue").default
+  'ExploreSearch': typeof import("../../components/Explore/Search.vue").default
+  'ExploreTrending0': typeof import("../../components/Explore/Trending0.vue").default
+  'LandingAbout': typeof import("../../components/Landing/About.vue").default
+  'LandingCTA': typeof import("../../components/Landing/CTA.vue").default
+  'LandingCast': typeof import("../../components/Landing/Cast.vue").default
+  'LandingCollection': typeof import("../../components/Landing/Collection.vue").default
+  'LandingFeatures': typeof import("../../components/Landing/Features.vue").default
+  'LandingHero': typeof import("../../components/Landing/Hero.vue").default
+  'LandingStoryPath': typeof import("../../components/Landing/LandingStoryPath.vue").default
+  'LandingTestimonials': typeof import("../../components/Landing/LandingTestimonials.vue").default
+  'LandingPage': typeof import("../../components/Landing/Page.vue").default
+  'UtilsFooter': typeof import("../../components/Utils/Footer.vue").default
+  'UtilsNavbar': typeof import("../../components/Utils/Navbar.vue").default
   'NuxtWelcome': typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue").default
   'NuxtLayout': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout").default
   'NuxtErrorBoundary': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue").default
@@ -54,23 +52,21 @@ interface _GlobalComponents {
   'Html': typeof import("../../node_modules/nuxt/dist/head/runtime/components").Html
   'Body': typeof import("../../node_modules/nuxt/dist/head/runtime/components").Body
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island").default
-  'LazyExploreHeader': LazyComponent<typeof import("../../components/ExploreHeader.vue").default>
-  'LazyExplorePage': LazyComponent<typeof import("../../components/ExplorePage.vue").default>
-  'LazyExploreRecommended': LazyComponent<typeof import("../../components/ExploreRecommended.vue").default>
-  'LazyExploreSearch': LazyComponent<typeof import("../../components/ExploreSearch.vue").default>
-  'LazyExploreTrending': LazyComponent<typeof import("../../components/ExploreTrending.vue").default>
-  'LazyHelloWorld': LazyComponent<typeof import("../../components/HelloWorld.vue").default>
-  'LazyLandingAbout': LazyComponent<typeof import("../../components/LandingAbout.vue").default>
-  'LazyLandingCTA': LazyComponent<typeof import("../../components/LandingCTA.vue").default>
-  'LazyLandingCast': LazyComponent<typeof import("../../components/LandingCast.vue").default>
-  'LazyLandingCollection': LazyComponent<typeof import("../../components/LandingCollection.vue").default>
-  'LazyLandingFeatures': LazyComponent<typeof import("../../components/LandingFeatures.vue").default>
-  'LazyLandingFooter': LazyComponent<typeof import("../../components/LandingFooter.vue").default>
-  'LazyLandingHero': LazyComponent<typeof import("../../components/LandingHero.vue").default>
-  'LazyLandingNavbar': LazyComponent<typeof import("../../components/LandingNavbar.vue").default>
-  'LazyLandingPage': LazyComponent<typeof import("../../components/LandingPage.vue").default>
-  'LazyLandingStoryPath': LazyComponent<typeof import("../../components/LandingStoryPath.vue").default>
-  'LazyLandingTestimonials': LazyComponent<typeof import("../../components/LandingTestimonials.vue").default>
+  'LazyContactHero': LazyComponent<typeof import("../../components/Contact/Hero.vue").default>
+  'LazyExploreRecommended': LazyComponent<typeof import("../../components/Explore/Recommended.vue").default>
+  'LazyExploreSearch': LazyComponent<typeof import("../../components/Explore/Search.vue").default>
+  'LazyExploreTrending0': LazyComponent<typeof import("../../components/Explore/Trending0.vue").default>
+  'LazyLandingAbout': LazyComponent<typeof import("../../components/Landing/About.vue").default>
+  'LazyLandingCTA': LazyComponent<typeof import("../../components/Landing/CTA.vue").default>
+  'LazyLandingCast': LazyComponent<typeof import("../../components/Landing/Cast.vue").default>
+  'LazyLandingCollection': LazyComponent<typeof import("../../components/Landing/Collection.vue").default>
+  'LazyLandingFeatures': LazyComponent<typeof import("../../components/Landing/Features.vue").default>
+  'LazyLandingHero': LazyComponent<typeof import("../../components/Landing/Hero.vue").default>
+  'LazyLandingStoryPath': LazyComponent<typeof import("../../components/Landing/LandingStoryPath.vue").default>
+  'LazyLandingTestimonials': LazyComponent<typeof import("../../components/Landing/LandingTestimonials.vue").default>
+  'LazyLandingPage': LazyComponent<typeof import("../../components/Landing/Page.vue").default>
+  'LazyUtilsFooter': LazyComponent<typeof import("../../components/Utils/Footer.vue").default>
+  'LazyUtilsNavbar': LazyComponent<typeof import("../../components/Utils/Navbar.vue").default>
   'LazyNuxtWelcome': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue").default>
   'LazyNuxtLayout': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout").default>
   'LazyNuxtErrorBoundary': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue").default>

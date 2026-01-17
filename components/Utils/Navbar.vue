@@ -1,12 +1,3 @@
-<script setup>
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about-us" },
-  { name: "Explore", href: "/explore" },
-  { name: "Create", href: "/create" },
-];
-</script>
-
 <template>
   <nav
     class="relative z-10 bg-white shadow-sm flex items-center justify-between px-8 py-4 max-w-full mx-auto"
@@ -51,3 +42,14 @@ const navLinks = [
     </div>
   </nav>
 </template>
+
+
+<script setup>
+const navLinks = [
+  { name: "Home", href: "/" },
+   { name: "Explore", href: "/explore" },
+  { name: "About Us", href: "/about-us" },
+  { name: "Contact Us", href: "/contact-us" },
+];
+</script>
+

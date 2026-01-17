@@ -1,6 +1,8 @@
 <template>
   <div>
+    <UtilsNavbar />
     <NuxtPage />
+    <UtilsFooter />
   </div>
 </template>
 
