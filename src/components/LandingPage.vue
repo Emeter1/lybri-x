@@ -222,11 +222,12 @@ onUnmounted(() => {
                     </div>
 
                     <div class="hidden md:flex items-center gap-10 text-sm font-semibold">
-                        <a v-for="link in navLinks" :key="link.name" :href="link.href"
-                            class="text-gray-600 hover:text-yellow-500 transition-colors duration-200"
+                        <button v-for="link in navLinks" :key="link.name"
+                            @click="$emit('navigate', link.name.toLowerCase() === 'home' ? 'landing' : link.name.toLowerCase())"
+                            class="text-gray-600 hover:text-yellow-500 transition-colors duration-200 cursor-pointer"
                             :class="{ 'text-black': link.name === 'Home' }">
                             {{ link.name }}
-                        </a>
+                        </button>
                     </div>
 
                     <div class="flex items-center gap-4 text-sm font-bold">
@@ -341,31 +342,15 @@ onUnmounted(() => {
                         class="relative flex flex-col md:flex-row justify-between items-start gap-0 mt-32 px-4 min-h-[500px]">
 
                         <!-- Connecting Line (Desktop) -->
-                        <div class="absolute inset-0 hidden md:block pointer-events-none">
-                            <svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1000 500">
-                                <!-- Glow Path -->
-                                <path d="M 15 250 
-                       C 40 250, 40 40, 90 40 
-                       L 150 40 C 200 40, 200 460, 250 460
-                       L 350 460 C 400 460, 400 40, 450 40 
-                       L 550 40 C 600 40, 600 460, 650 460
-                       L 750 460 C 800 460, 800 40, 850 40
-                       L 920 40 C 960 40, 960 250, 985 250" fill="none" stroke="#D1E9F6" stroke-width="8"
-                                    stroke-linecap="round" class="opacity-30 blur-sm" />
-                                <!-- Main Path -->
-                                <path d="M 15 250 
-                       C 40 250, 40 40, 90 40 
-                       L 150 40 C 200 40, 200 460, 250 460
-                       L 350 460 C 400 460, 400 40, 450 40 
-                       L 550 40 C 600 40, 600 460, 650 460
-                       L 750 460 C 800 460, 800 40, 850 40
-                       L 920 40 C 960 40, 960 250, 985 250" fill="none" stroke="#D1E9F6" stroke-width="2.5"
-                                    stroke-linecap="round" />
-
-                                <!-- Start & End Nodes -->
-                                <circle cx="15" cy="250" r="4.5" fill="#D1E9F6" />
-                                <circle cx="985" cy="250" r="4.5" fill="#D1E9F6" />
-                            </svg>
+                        <div
+                            class="absolute top-1/2 left-0 right-0 hidden md:block -translate-y-1/2 pointer-events-none z-0">
+                            <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-amber-200/60 -translate-y-1/2 z-0">
+                            </div>
+                            <div class="relative z-10 grid grid-cols-5">
+                                <div v-for="i in 5" :key="i" class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-amber-500"></div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Steps -->
