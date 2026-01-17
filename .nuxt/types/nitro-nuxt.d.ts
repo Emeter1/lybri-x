@@ -1,8 +1,8 @@
 
 /// <reference path="app.config.d.ts" />
 /// <reference path="runtime-config.d.ts" />
-/// <reference types="D:/projects/lybri-x/node_modules/@nuxt/nitro-server/dist/index.mjs" />
-/// <reference path="middleware.d.ts" />
+/// <reference types="C:/projects/lybri-x/node_modules/@nuxt/nitro-server/dist/index.mjs" />
+/// <reference path="nitro-middleware.d.ts" />
 /// <reference path="./schema.d.ts" />
 
 import type { RuntimeConfig } from 'nuxt/schema'
