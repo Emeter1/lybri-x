@@ -234,7 +234,7 @@ onUnmounted(() => {
               >
                 <div
                   v-if="step.type === 'card'"
-                  class="bg-[#FEECAE] p-8 rounded-[2.5rem] shadow-xl shadow-yellow-200/20 border border-yellow-200/50 w-full h-full flex flex-col items-center justify-between hover:scale-105 transition-transform duration-300"
+                  class="bg-[#FEECAE] px-8 py-10 rounded-[2.5rem] shadow-xl shadow-yellow-200/20 border border-yellow-200/50 w-full h-full flex flex-col items-center justify-center gap-3 hover:scale-105 transition-transform duration-300"
                 >
                   <div
                     class="mb-2 text-[#3D1A1A] scale-110"
@@ -253,25 +253,11 @@ onUnmounted(() => {
                       {{ slide.description }}
                     </p>
                   </div>
-
-                  <!-- Progress Dots -->
-                  <div class="flex gap-2.5 mt-auto pb-2">
-                    <div
-                      v-for="i in step.slides.length"
-                      :key="i"
-                      class="w-2 h-2 rounded-full transition-all duration-300"
-                      :class="
-                        i - 1 === slideIdx
-                          ? 'bg-gray-800 scale-125'
-                          : 'bg-gray-300'
-                      "
-                    ></div>
-                  </div>
                 </div>
 
                 <div
                   v-else
-                  class="flex flex-col items-center text-center w-full h-[300px] justify-center group py-4"
+                  class="bg-white px-8 py-10 rounded-[2.5rem] shadow-xl border border-gray-100 w-full h-full flex flex-col items-center justify-center gap-3 text-center group hover:scale-105 transition-transform duration-300"
                 >
                   <div
                     class="mb-4 text-[#3D1A1A] group-hover:scale-110 transition-transform duration-300 scale-125"
@@ -289,20 +275,6 @@ onUnmounted(() => {
                     >
                       {{ slide.description }}
                     </p>
-                  </div>
-
-                  <!-- Progress Dots -->
-                  <div class="flex gap-2.5 mt-auto pb-2">
-                    <div
-                      v-for="i in step.slides.length"
-                      :key="i"
-                      class="w-2 h-2 rounded-full transition-all duration-300"
-                      :class="
-                        i - 1 === slideIdx
-                          ? 'bg-gray-600 scale-125'
-                          : 'bg-gray-300'
-                      "
-                    ></div>
                   </div>
                 </div>
               </div>
@@ -323,7 +295,6 @@ onUnmounted(() => {
   opacity: 1;
   transform: translateY(0);
 }
-
 /* Swipe Animation */
 .swipe-enter-active,
 .swipe-leave-active {

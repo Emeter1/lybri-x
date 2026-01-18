@@ -38,7 +38,7 @@ const aboutUsImg = "/assets/about_us_book_heart_1768317623524.png";
           class="relative rounded-[2rem] overflow-hidden shadow-2xl h-80 lg:h-auto"
         >
           <img
-            :src="aboutUsImg"
+            src="@/assets/HeartShapedBook.jpg"
             alt="About Us - Heart Shaped Book"
             class="w-full h-full object-cover"
           />
