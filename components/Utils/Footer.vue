@@ -1,12 +1,12 @@
 <template>
-  <footer class="bg-[#151515] pt-24 pb-12 px-8 border-t border-gray-800 mt-5">
+  <footer class="bg-[#151515] pt-8 pb-4 px-8 border-t border-gray-800">
     <div class="max-w-7xl mx-auto">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20 text-left"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-6 text-left"
       >
         <!-- Brand Column -->
         <div class="lg:col-span-2">
-          <div class="flex items-center gap-2 mb-6">
+          <div class="flex items-center gap-2 mb-4">
             <svg
               width="126"
               height="57"
@@ -28,7 +28,7 @@
           </div>
 
           <p
-            class="text-gray-400 text-sm leading-relaxed max-w-sm mb-8 font-light"
+            class="text-gray-400 text-sm leading-relaxed max-w-sm mb-4 font-light"
           >
             Our solutions make production faster and cheaper. Contact us for
             more information.
@@ -38,7 +38,7 @@
           <div class="flex gap-4">
             <a
               href="#"
-              class="text-yellow-500 hover:text-yellow-400 transition-colors bg-yellow-500/10 p-2 rounded-md"
+              class="text-yellow-500 hover:text-yellow-400 transition-colors"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -48,7 +48,7 @@
             </a>
             <a
               href="#"
-              class="text-yellow-500 hover:text-yellow-400 transition-colors bg-yellow-500/10 p-2 rounded-md"
+              class="text-yellow-500 hover:text-yellow-400 transition-colors"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -58,7 +58,7 @@
             </a>
             <a
               href="#"
-              class="text-yellow-500 hover:text-yellow-400 transition-colors bg-yellow-500/10 p-2 rounded-md"
+              class="text-yellow-500 hover:text-yellow-400 transition-colors"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -66,13 +66,24 @@
                 />
               </svg>
             </a>
+
             <a
               href="#"
-              class="text-yellow-500 hover:text-yellow-400 transition-colors bg-yellow-500/10 p-2 rounded-md"
+              class="text-yellow-500 hover:text-yellow-400 transition-colors"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="text-yellow-500 hover:text-yellow-400 transition-colors"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
                 />
               </svg>
             </a>
@@ -163,9 +174,8 @@
         </div>
       </div>
 
-      <!-- Bottom Bar -->
       <div
-        class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4"
+        class="pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4"
       >
         <p class="text-gray-500 text-sm flex items-center gap-1">
           <span class="text-lg">©</span> 2025 LabariX. All rights reserved
@@ -183,8 +193,4 @@
   </footer>
 </template>
 
-<style scoped>
-footer h4 {
-  font-family: "Playfair Display", serif;
-}
-</style>
+

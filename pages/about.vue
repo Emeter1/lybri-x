@@ -1,11 +1,11 @@
 <template>
   <div class="bg-white">
-    <AboutHero />
+    <!-- <AboutHero /> -->
     <AboutMission />
-    <AboutStory />
+    <!-- <AboutStory />
     <AboutValues />
-    <AboutTeam />
-    <LandingCTA />
+    <AboutTeam /> -->
+    <!-- <LandingCTA /> -->
   </div>
 </template>
 
