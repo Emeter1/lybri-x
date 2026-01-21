@@ -1,13 +1,7 @@
 <template>
-  <div>
-    <h1>Contact Us</h1>
-  </div>
+  <ContactHero />
 </template>
 
-
-<script>
+<script setup>
+// Nuxt auto-imports the ContactHero component from components/Contact/Hero.vue
 </script>
-
-
-<style>
-</style>
