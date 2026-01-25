@@ -32,6 +32,13 @@ interface _GlobalComponents {
   'LandingStoryPath': typeof import("../../components/Landing/LandingStoryPath.vue").default
   'LandingTestimonials': typeof import("../../components/Landing/LandingTestimonials.vue").default
   'LandingPage': typeof import("../../components/Landing/Page.vue").default
+  'StoryDetailsChapterPreview': typeof import("../../components/StoryDetails/ChapterPreview.vue").default
+  'StoryDetailsHero': typeof import("../../components/StoryDetails/Hero.vue").default
+  'StoryDetailsSimilarStories': typeof import("../../components/StoryDetails/SimilarStories.vue").default
+  'StoryDetailsSynopsis': typeof import("../../components/StoryDetails/Synopsis.vue").default
+  'StoryReaderContent': typeof import("../../components/StoryReader/Content.vue").default
+  'StoryReaderNavbar': typeof import("../../components/StoryReader/Navbar.vue").default
+  'SuccessPg': typeof import("../../components/SuccessPg.vue").default
   'UtilsFooter': typeof import("../../components/Utils/Footer.vue").default
   'UtilsNavbar': typeof import("../../components/Utils/Navbar.vue").default
   'NuxtWelcome': typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue").default
@@ -75,6 +82,13 @@ interface _GlobalComponents {
   'LazyLandingStoryPath': LazyComponent<typeof import("../../components/Landing/LandingStoryPath.vue").default>
   'LazyLandingTestimonials': LazyComponent<typeof import("../../components/Landing/LandingTestimonials.vue").default>
   'LazyLandingPage': LazyComponent<typeof import("../../components/Landing/Page.vue").default>
+  'LazyStoryDetailsChapterPreview': LazyComponent<typeof import("../../components/StoryDetails/ChapterPreview.vue").default>
+  'LazyStoryDetailsHero': LazyComponent<typeof import("../../components/StoryDetails/Hero.vue").default>
+  'LazyStoryDetailsSimilarStories': LazyComponent<typeof import("../../components/StoryDetails/SimilarStories.vue").default>
+  'LazyStoryDetailsSynopsis': LazyComponent<typeof import("../../components/StoryDetails/Synopsis.vue").default>
+  'LazyStoryReaderContent': LazyComponent<typeof import("../../components/StoryReader/Content.vue").default>
+  'LazyStoryReaderNavbar': LazyComponent<typeof import("../../components/StoryReader/Navbar.vue").default>
+  'LazySuccessPg': LazyComponent<typeof import("../../components/SuccessPg.vue").default>
   'LazyUtilsFooter': LazyComponent<typeof import("../../components/Utils/Footer.vue").default>
   'LazyUtilsNavbar': LazyComponent<typeof import("../../components/Utils/Navbar.vue").default>
   'LazyNuxtWelcome': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue").default>

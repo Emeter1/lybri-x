@@ -32,6 +32,13 @@ export const LandingHero: typeof import("../components/Landing/Hero.vue").defaul
 export const LandingStoryPath: typeof import("../components/Landing/LandingStoryPath.vue").default
 export const LandingTestimonials: typeof import("../components/Landing/LandingTestimonials.vue").default
 export const LandingPage: typeof import("../components/Landing/Page.vue").default
+export const StoryDetailsChapterPreview: typeof import("../components/StoryDetails/ChapterPreview.vue").default
+export const StoryDetailsHero: typeof import("../components/StoryDetails/Hero.vue").default
+export const StoryDetailsSimilarStories: typeof import("../components/StoryDetails/SimilarStories.vue").default
+export const StoryDetailsSynopsis: typeof import("../components/StoryDetails/Synopsis.vue").default
+export const StoryReaderContent: typeof import("../components/StoryReader/Content.vue").default
+export const StoryReaderNavbar: typeof import("../components/StoryReader/Navbar.vue").default
+export const SuccessPg: typeof import("../components/SuccessPg.vue").default
 export const UtilsFooter: typeof import("../components/Utils/Footer.vue").default
 export const UtilsNavbar: typeof import("../components/Utils/Navbar.vue").default
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue").default
@@ -75,6 +82,13 @@ export const LazyLandingHero: LazyComponent<typeof import("../components/Landing
 export const LazyLandingStoryPath: LazyComponent<typeof import("../components/Landing/LandingStoryPath.vue").default>
 export const LazyLandingTestimonials: LazyComponent<typeof import("../components/Landing/LandingTestimonials.vue").default>
 export const LazyLandingPage: LazyComponent<typeof import("../components/Landing/Page.vue").default>
+export const LazyStoryDetailsChapterPreview: LazyComponent<typeof import("../components/StoryDetails/ChapterPreview.vue").default>
+export const LazyStoryDetailsHero: LazyComponent<typeof import("../components/StoryDetails/Hero.vue").default>
+export const LazyStoryDetailsSimilarStories: LazyComponent<typeof import("../components/StoryDetails/SimilarStories.vue").default>
+export const LazyStoryDetailsSynopsis: LazyComponent<typeof import("../components/StoryDetails/Synopsis.vue").default>
+export const LazyStoryReaderContent: LazyComponent<typeof import("../components/StoryReader/Content.vue").default>
+export const LazyStoryReaderNavbar: LazyComponent<typeof import("../components/StoryReader/Navbar.vue").default>
+export const LazySuccessPg: LazyComponent<typeof import("../components/SuccessPg.vue").default>
 export const LazyUtilsFooter: LazyComponent<typeof import("../components/Utils/Footer.vue").default>
 export const LazyUtilsNavbar: LazyComponent<typeof import("../components/Utils/Navbar.vue").default>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue").default>

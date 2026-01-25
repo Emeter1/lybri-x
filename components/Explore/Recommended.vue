@@ -44,10 +44,11 @@ const stories = [
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div
+      <NuxtLink
         v-for="(story, index) in stories"
         :key="index"
-        class="bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group"
+        :to="`/stories/${story.id || 'default'}`"
+        class="bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group block"
       >
         <!-- Image Container -->
         <div class="relative h-64 overflow-hidden">
@@ -127,7 +128,7 @@ const stories = [
             </button>
           </div>
         </div>
-      </div>
+      </NuxtLink>
     </div>
   </section>
 </template>
