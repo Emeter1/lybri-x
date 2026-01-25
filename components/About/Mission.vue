@@ -3,46 +3,73 @@ const aboutUsImg = "/assets/about_us_book_heart_1768317623524.png";
 </script>
 
 <template>
-  <section class="py-24 px-6 bg-white">
+  <section class="py-10 md:py-16 px-6 bg-white">
     <div class="max-w-7xl mx-auto">
-      <h2
-        class="text-4xl md:text-5xl font-extrabold text-[#3D1A1A] mb-16 text-center"
+      <h1
+        class="text-4xl md:text-6xl font-bold text-[#1a1a1a] mb-8 text-center tracking-tight"
         style="font-family: 'Playfair Display', serif"
       >
         About Us
-      </h2>
+      </h1>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <!-- Text Content -->
-        <div class="order-2 lg:order-1 text-left flex flex-col justify-center">
-          <div
-            class="space-y-6 text-gray-600 text-lg leading-relaxed font-medium"
-          >
-            <p>
-              Labarix is a storytelling platform built for those who write,
-              read, and give stories a voice. It brings together writers,
-              readers, and voice artists in one immersive space where stories
-              are created, discovered, and experienced in deeper ways.
-            </p>
-            <p>
-              More than a novel app, Labarix is a home for narratives that
-              linger long after the last page. We believe stories are meant to
-              be felt, heard, and shared connecting people through imagination,
-              emotion, and the power of storytelling.
-            </p>
-          </div>
-        </div>
-
-        <!-- Image -->
+      <div class="block">
+        <!-- Image floated to the right -->
         <div
-          class="order-1 lg:order-2 relative rounded-[2rem] overflow-hidden shadow-2xl h-80 lg:h-auto"
+          class="float-right ml-8 mb-6 w-full md:w-[45%] lg:w-[40%] relative rounded-3xl overflow-hidden shadow-lg"
         >
           <img
-            :src="aboutUsImg"
-            alt="About Us - Heart Shaped Book"
-            class="w-full h-full object-cover"
+            src="@/assets/HeartShapedBook.jpg"
+            alt="Heart Shaped Book Pages"
+            class="w-full h-auto object-cover"
           />
         </div>
+
+        <!-- Text Content -->
+        <div
+          class="text-[#1a1a1a] text-lg leading-relaxed text-justify"
+          style="font-family: 'Playfair Display', serif"
+        >
+          <p class="mb-6">
+            Labarix is a storytelling platform built to connect words, voices,
+            and audiences in one creative space. We believe stories are more
+            than just text on a screen—they are experiences meant to be written
+            with intention, read with emotion, and heard with depth. Stories
+            have the power to inspire, comfort, and connect people, and Labarix
+            exists to ensure those stories are given the space and attention
+            they deserve. Our platform is designed to empower storytellers with
+            the tools, visibility, and audience they need to grow, while giving
+            readers and listeners access to stories that truly resonate and stay
+            with them.
+          </p>
+          <p class="mb-6">
+            At the core of Labarix are three distinct but interconnected casts:
+            Writers, Readers, and Voice Artists. Writers are the creators,
+            crafting original novels, series, and narratives that spark
+            imagination and build new worlds.
+          </p>
+          <p class="mb-6">
+            Readers are the lifeblood of the platform, bringing stories to life
+            through their engagement, feedback, and support, helping stories
+            evolve and reach wider audiences. Voice artists add an immersive
+            layer to storytelling by transforming written words into expressive
+            audio experiences, allowing stories to be felt through tone,
+            emotion, and performance. Each cast plays a vital role, and together
+            they form a complete storytelling ecosystem where creativity flows
+            freely from one form to another.
+          </p>
+          <p>
+            Our mission is simple: to make storytelling accessible,
+            collaborative, and impactful for everyone involved. Labarix is built
+            to encourage creativity, foster meaningful collaboration, and create
+            a community where stories can grow beyond a single format. Whether
+            you are crafting your first chapter, discovering your next favorite
+            novel, or lending your voice to a powerful story, Labarix is built
+            for you. Here, stories don't just live on the page—they move through
+            voices, connect with audiences, and continue to grow long after they
+            are first created.
+          </p>
+        </div>
+        <div class="clear-both"></div>
       </div>
     </div>
   </section>
