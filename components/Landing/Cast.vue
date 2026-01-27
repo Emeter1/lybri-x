@@ -60,11 +60,12 @@ const castMembers = [
             {{ member.description }}
           </p>
 
-          <button
-            class="mt-auto bg-[#602D2D] hover:bg-[#4D2424] text-white px-10 py-3 rounded-xl font-medium transition-all active:scale-95"
+          <NuxtLink
+            :to="member.name === 'Writers' ? '/cast/writers' : '#'"
+            class="mt-auto bg-[#602D2D] hover:bg-[#4D2424] text-white px-10 py-3 rounded-xl font-medium transition-all active:scale-95 inline-block"
           >
             Explore More
-          </button>
+          </NuxtLink>
         </div>
       </div>
     </div>

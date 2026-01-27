@@ -186,7 +186,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="py-24 px-6 bg-[#FDFCF9] overflow-hidden">
+  <section class="py-24 px-6 bg-[#FFFFFF] overflow-hidden">
     <div class="max-w-7xl mx-auto text-center relative">
       <h2
         class="text-5xl md:text-6xl font-extrabold text-[#3D1A1A] mb-4"
