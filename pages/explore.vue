@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from "vue";
+
 // Nuxt auto-imports components from the components/ directory
 </script>
 
