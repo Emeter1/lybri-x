@@ -23,6 +23,7 @@ interface _GlobalComponents {
   'ContactHero': typeof import("../../components/Contact/Hero.vue").default
   'ExploreRecommended': typeof import("../../components/Explore/Recommended.vue").default
   'ExploreSearch': typeof import("../../components/Explore/Search.vue").default
+  'ExploreTrending': typeof import("../../components/Explore/Trending.vue").default
   'ExploreTrending0': typeof import("../../components/Explore/Trending0.vue").default
   'LandingAbout': typeof import("../../components/Landing/About.vue").default
   'LandingCTA': typeof import("../../components/Landing/CTA.vue").default
@@ -74,6 +75,7 @@ interface _GlobalComponents {
   'LazyContactHero': LazyComponent<typeof import("../../components/Contact/Hero.vue").default>
   'LazyExploreRecommended': LazyComponent<typeof import("../../components/Explore/Recommended.vue").default>
   'LazyExploreSearch': LazyComponent<typeof import("../../components/Explore/Search.vue").default>
+  'LazyExploreTrending': LazyComponent<typeof import("../../components/Explore/Trending.vue").default>
   'LazyExploreTrending0': LazyComponent<typeof import("../../components/Explore/Trending0.vue").default>
   'LazyLandingAbout': LazyComponent<typeof import("../../components/Landing/About.vue").default>
   'LazyLandingCTA': LazyComponent<typeof import("../../components/Landing/CTA.vue").default>

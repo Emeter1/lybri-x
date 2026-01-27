@@ -23,6 +23,7 @@ export const CastWriter: typeof import("../components/Cast/Writer.vue").default
 export const ContactHero: typeof import("../components/Contact/Hero.vue").default
 export const ExploreRecommended: typeof import("../components/Explore/Recommended.vue").default
 export const ExploreSearch: typeof import("../components/Explore/Search.vue").default
+export const ExploreTrending: typeof import("../components/Explore/Trending.vue").default
 export const ExploreTrending0: typeof import("../components/Explore/Trending0.vue").default
 export const LandingAbout: typeof import("../components/Landing/About.vue").default
 export const LandingCTA: typeof import("../components/Landing/CTA.vue").default
@@ -74,6 +75,7 @@ export const LazyCastWriter: LazyComponent<typeof import("../components/Cast/Wri
 export const LazyContactHero: LazyComponent<typeof import("../components/Contact/Hero.vue").default>
 export const LazyExploreRecommended: LazyComponent<typeof import("../components/Explore/Recommended.vue").default>
 export const LazyExploreSearch: LazyComponent<typeof import("../components/Explore/Search.vue").default>
+export const LazyExploreTrending: LazyComponent<typeof import("../components/Explore/Trending.vue").default>
 export const LazyExploreTrending0: LazyComponent<typeof import("../components/Explore/Trending0.vue").default>
 export const LazyLandingAbout: LazyComponent<typeof import("../components/Landing/About.vue").default>
 export const LazyLandingCTA: LazyComponent<typeof import("../components/Landing/CTA.vue").default>
