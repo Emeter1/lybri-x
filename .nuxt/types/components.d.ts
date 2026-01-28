@@ -19,7 +19,9 @@ interface _GlobalComponents {
   'AboutStory': typeof import("../../components/About/Story.vue").default
   'AboutTeam': typeof import("../../components/About/Team.vue").default
   'AboutValues': typeof import("../../components/About/Values.vue").default
-  'CastWriter': typeof import("../../components/Cast/Writer.vue").default
+  'CastReader': typeof import("../../components/Cast/Reader/Index.vue").default
+  'CastVoiceArtist': typeof import("../../components/Cast/VoiceArtist/Index.vue").default
+  'CastWriter': typeof import("../../components/Cast/Writer/Index.vue").default
   'ContactHero': typeof import("../../components/Contact/Hero.vue").default
   'ExploreRecommended': typeof import("../../components/Explore/Recommended.vue").default
   'ExploreSearch': typeof import("../../components/Explore/Search.vue").default
@@ -71,7 +73,9 @@ interface _GlobalComponents {
   'LazyAboutStory': LazyComponent<typeof import("../../components/About/Story.vue").default>
   'LazyAboutTeam': LazyComponent<typeof import("../../components/About/Team.vue").default>
   'LazyAboutValues': LazyComponent<typeof import("../../components/About/Values.vue").default>
-  'LazyCastWriter': LazyComponent<typeof import("../../components/Cast/Writer.vue").default>
+  'LazyCastReader': LazyComponent<typeof import("../../components/Cast/Reader/Index.vue").default>
+  'LazyCastVoiceArtist': LazyComponent<typeof import("../../components/Cast/VoiceArtist/Index.vue").default>
+  'LazyCastWriter': LazyComponent<typeof import("../../components/Cast/Writer/Index.vue").default>
   'LazyContactHero': LazyComponent<typeof import("../../components/Contact/Hero.vue").default>
   'LazyExploreRecommended': LazyComponent<typeof import("../../components/Explore/Recommended.vue").default>
   'LazyExploreSearch': LazyComponent<typeof import("../../components/Explore/Search.vue").default>
