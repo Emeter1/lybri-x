@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  chapterData: {
+  chapter: {
     type: Object,
     required: true,
     default: () => ({
@@ -86,49 +86,37 @@ She did.
 
 As she handed him his coffee, she realized this was how things started—not with grand moments or sudden feelings, but with small, ordinary routines.
 
-And sometimes, those were the ones that changed everything.`,
-    }),
-  },
+And sometimes, those were the ones that changed everything.`
+    })
+  }
 });
 </script>
 
 <template>
-  <div class="max-w-5xl mx-auto px-6 py-8">
-    <!-- Header -->
-    <div class="mb-12 border-b border-gray-100 pb-8">
-      <h1 class="text-2xl md:text-4xl font-serif font-bold text-[#1a1a1a] mb-4">
-        Chapter {{ chapterData.number }}: {{ chapterData.title }}
-      </h1>
-      <div class="flex items-center gap-2 text-sm font-sans text-gray-500">
-        <span class="font-medium text-gray-900"
-          >By {{ chapterData.author }}</span
-        >
-        <span>•</span>
-        <span>Uploaded {{ chapterData.date }}</span>
-      </div>
-    </div>
-
-    <!-- Content -->
-    <article class="prose prose-lg prose-gray max-w-none">
-      <div
-        class="text-lg md:text-xl font-serif leading-loose text-gray-800 space-y-8 tracking-tight whitespace-pre-line"
-      >
-        {{ chapterData.content }}
-      </div>
-    </article>
-
-    <!-- Chapter Navigation -->
-    <div class="mt-16">
-      <div
-        class="border border-gray-200 rounded-full px-6 py-4 flex items-center justify-between mb-8 cursor-pointer hover:border-gray-300 transition-colors"
-      >
-        <div class="flex items-center gap-2">
-          <span class="font-serif text-lg text-gray-800"
-            >Chapter {{ chapterData.number }}: {{ chapterData.title }}</span
-          >
+  <section class="max-w-7xl mx-auto px-6 pb-12 font-sans">
+    <div class="bg-white rounnoded-[2.5rem] p-8 md:p-12 border border-gray-100 shadow-sm">
+      <!-- Header -->
+      <div class="mb-10">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-[#1a1a1a] mb-3">
+          Chapter {{ chapter.number }}: {{ chapter.title }}
+        </h2>
+        <div class="text-gray-500 space-y-1">
+          <p class="text-lg font-normal">By {{ chapter.author }}</p>
+          <p class="text-sm opacity-60">Uploaded {{ chapter.date }}</p>
         </div>
+      </div>
 
-        <div class="flex items-center gap-4">
+      <!-- Story Content -->
+      <div class="text-gray-700 text-lg md:text-xl font-serif leading-relaxed space-y-8 tracking-tight whitespace-pre-line">
+        {{ chapter.content }}
+      </div>
+
+      <!-- Read More Action (if this is a preview) -->
+      <div class="mt-12 flex flex-col sm:flex-row gap-6">
+         <NuxtLink
+          :to="`/stories/${$route.params.id || 'default'}/read`"
+          class="bg-[#FFD700] hover:bg-[#F4C430] text-black py-4 px-10 rounded-xl font-bold font-sans text-lg flex items-center justify-center gap-3 transition-transform active:scale-95 shadow-lg shadow-yellow-400/10"
+        >
           <svg
             width="24"
             height="24"
@@ -136,56 +124,19 @@ And sometimes, those were the ones that changed everything.`,
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M12 15L7 10H17L12 15Z" fill="#1F2937" />
-          </svg>
-          <span class="font-sans font-medium text-gray-500">1 / 50</span>
-        </div>
-      </div>
-
-      <div class="flex items-center justify-center gap-6">
-        <button
-          class="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-500 font-sans font-medium hover:border-gray-400 hover:text-gray-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
             <path
-              d="M12.5 15L7.5 10L12.5 5"
-              stroke="currentColor"
-              stroke-width="1.5"
+              d="M5 12H19M19 12L12 5M19 12L12 19"
+              stroke="black"
+              stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
           </svg>
-          Previous Chapter
-        </button>
-        <button
-          class="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-900 font-sans font-medium hover:border-gray-400 hover:text-black transition-colors"
-        >
-          Next Chapter
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.5 5L12.5 10L7.5 15"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
+          Continue Reading
+        </NuxtLink>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

@@ -37,6 +37,7 @@ interface _GlobalComponents {
   'LandingTestimonials': typeof import("../../components/Landing/LandingTestimonials.vue").default
   'LandingPage': typeof import("../../components/Landing/Page.vue").default
   'StoryDetailsChapterPreview': typeof import("../../components/StoryDetails/ChapterPreview.vue").default
+  'StoryDetailsContent': typeof import("../../components/StoryDetails/Content.vue").default
   'StoryDetailsHero': typeof import("../../components/StoryDetails/Hero.vue").default
   'StoryDetailsSimilarStories': typeof import("../../components/StoryDetails/SimilarStories.vue").default
   'StoryDetailsSynopsis': typeof import("../../components/StoryDetails/Synopsis.vue").default
@@ -91,6 +92,7 @@ interface _GlobalComponents {
   'LazyLandingTestimonials': LazyComponent<typeof import("../../components/Landing/LandingTestimonials.vue").default>
   'LazyLandingPage': LazyComponent<typeof import("../../components/Landing/Page.vue").default>
   'LazyStoryDetailsChapterPreview': LazyComponent<typeof import("../../components/StoryDetails/ChapterPreview.vue").default>
+  'LazyStoryDetailsContent': LazyComponent<typeof import("../../components/StoryDetails/Content.vue").default>
   'LazyStoryDetailsHero': LazyComponent<typeof import("../../components/StoryDetails/Hero.vue").default>
   'LazyStoryDetailsSimilarStories': LazyComponent<typeof import("../../components/StoryDetails/SimilarStories.vue").default>
   'LazyStoryDetailsSynopsis': LazyComponent<typeof import("../../components/StoryDetails/Synopsis.vue").default>

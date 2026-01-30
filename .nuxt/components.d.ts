@@ -37,6 +37,7 @@ export const LandingStoryPath: typeof import("../components/Landing/LandingStory
 export const LandingTestimonials: typeof import("../components/Landing/LandingTestimonials.vue").default
 export const LandingPage: typeof import("../components/Landing/Page.vue").default
 export const StoryDetailsChapterPreview: typeof import("../components/StoryDetails/ChapterPreview.vue").default
+export const StoryDetailsContent: typeof import("../components/StoryDetails/Content.vue").default
 export const StoryDetailsHero: typeof import("../components/StoryDetails/Hero.vue").default
 export const StoryDetailsSimilarStories: typeof import("../components/StoryDetails/SimilarStories.vue").default
 export const StoryDetailsSynopsis: typeof import("../components/StoryDetails/Synopsis.vue").default
@@ -91,6 +92,7 @@ export const LazyLandingStoryPath: LazyComponent<typeof import("../components/La
 export const LazyLandingTestimonials: LazyComponent<typeof import("../components/Landing/LandingTestimonials.vue").default>
 export const LazyLandingPage: LazyComponent<typeof import("../components/Landing/Page.vue").default>
 export const LazyStoryDetailsChapterPreview: LazyComponent<typeof import("../components/StoryDetails/ChapterPreview.vue").default>
+export const LazyStoryDetailsContent: LazyComponent<typeof import("../components/StoryDetails/Content.vue").default>
 export const LazyStoryDetailsHero: LazyComponent<typeof import("../components/StoryDetails/Hero.vue").default>
 export const LazyStoryDetailsSimilarStories: LazyComponent<typeof import("../components/StoryDetails/SimilarStories.vue").default>
 export const LazyStoryDetailsSynopsis: LazyComponent<typeof import("../components/StoryDetails/Synopsis.vue").default>

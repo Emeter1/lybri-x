@@ -151,57 +151,9 @@ const similarStories = [
                 </p>
             </div>
 
-            <!-- Chapter Preview -->
-            <div class="mt-8 border border-gray-100 rounded-2xl p-8 lg:p-10 bg-[#FBFFFB] shadow-sm font-serif">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">Chapter One: A Normal Beginning</h3>
-                <div class="text-gray-700 text-lg leading-relaxed space-y-6 font-outfit">
-                    <p>
-                        The rain started early that morning, light and steady, enough to slow the city but not stop it.
-                        Aderinsola noticed it only because the café was quieter than usual. Fewer customers came in when
-                        the weather looked uncertain, and she didn't mind the calm. Quiet made the hours pass easier.
-                    </p>
-                    <p>
-                        She stood behind the counter, refilling sugar jars and wiping surfaces that were already clean.
-                        Working mornings had become routine—comfortable, predictable. That was how she liked her life
-                        now.
-                        Simple rules, no surprises.
-                    </p>
-                    <p>
-                        “Solá,” her coworker said from the back. “You’re on the floor.”
-                    </p>
-                    <p>
-                        “I know,” she replied, tying her apron properly before stepping forward.
-                    </p>
-                    <p>
-                        The café smelled of coffee and baked bread. A soft playlist played in the background, barely
-                        noticeable. Aderinsola moved between tables with practiced ease, taking orders, delivering
-                        drinks, exchanging polite smiles. She didn't think much about the people who came in anymore.
-                        Faces blurred together after a while.
-                    </p>
-                    <p>
-                        When the door opened again, she didn't look up immediately.
-                    </p>
-                    <p>
-                        “Hi,” a man said at the counter.
-                    </p>
-                    <p>
-                        She turned. He looked like someone new—slightly unsure, dressed neatly but without
-                        eff..........<a href="#" class="text-blue-500 hover:text-blue-600 font-medium">Read More</a>
-                    </p>
-                </div>
-            </div>
+            <!-- Story Content Preview -->
+            <StoryDetailsContent />
 
-            <!-- Continue Reading Button -->
-            <div class="mt-8">
-                <button
-                    class="px-8 py-3 bg-[#FFC800] hover:bg-[#E5B300] text-gray-900 font-bold rounded-md transition-colors flex items-center gap-2 font-outfit">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                    </svg>
-                    Continue Reading
-                </button>
-            </div>
 
             <!-- Similar Stories -->
             <div class="mt-16 pt-8 border-t border-gray-100">
