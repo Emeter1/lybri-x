@@ -4,18 +4,20 @@
 <template>
   <div class="bg-[#FAFAFA] min-h-screen">
     <!-- Hero Section -->
-    <div class="py-20 px-6 text-center">
+    <div class="py-15 px-6 text-center">
       <h1
-        class="text-5xl md:text-6xl font-extrabold text-[#3D1A1A] mb-4"
+        class="text-5xl md:text-6xl font-extrabold text-[#3D1A1A] mb-1"
         style="font-family: 'Playfair Display', serif"
       >
         The Writer’s Cast
       </h1>
-      <p class="text-gray-500 text-lg md:text-xl font-medium mb-8 opacity-80">
+      <p class="text-gray-800 text-lg md:text-x1 font-medium mb-4 opacity-80 " 
+          style="font-family: 'Playfair Display', serif">
         A dedicated space for writers to write, grow and be recognized.
       </p>
       <button
-        class="bg-yellow-400 hover:bg-yellow-500 text-[#3D1A1A] font-bold py-3 px-8 rounded-lg shadow-md transition-colors"
+        class="bg-yellow-400 hover:bg-yellow-500 text-[#3D1A1A] font-bold py-3 px-15 rounded-lg shadow-md transition-colors"
+        style="font-family: 'Playfair Display', serif"
       >
         Start Writing
       </button>
