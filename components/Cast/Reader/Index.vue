@@ -2,20 +2,23 @@
 </script>
 
 <template>
-  <div class="bg-[#FAFAFA] min-h-screen">
+  <div class="bg-white min-h-screen" 
+  style="font-family: 'Playfair Display', serif">
     <!-- Hero Section -->
-    <div class="py-20 px-6 text-center">
+    <div class="bg-[#F2F2F2] py-6 px-6 mb-7 text-center">
       <h1
-        class="text-5xl md:text-6xl font-extrabold text-[#3D1A1A] mb-4"
+        class="text-5xl md:text-6xl font-extrabold text-[#3D1A1A] mb-2"
         style="font-family: 'Playfair Display', serif"
       >
-        The Reader’s Cast
+        The Reader  ’s Cast
       </h1>
-      <p class="text-gray-500 text-lg md:text-xl font-medium mb-8 opacity-80 max-w-3xl mx-auto">
+      <p class="text-gray-800 text-lg md:text-xl font-medium mb-5 opacity-80 max-w-3xl mx-auto"
+      style="font-family: 'Playfair Display', serif">
         A space for readers to explore stories, connect and get lost in the worlds they love.
       </p>
       <button
-        class="bg-yellow-400 hover:bg-yellow-500 text-[#3D1A1A] font-bold py-3 px-12 rounded-lg shadow-md transition-colors"
+        class="bg-yellow-400 hover:bg-yellow-500 text-[#3D1A1A] font-bold py-2 px-10 rounded-lg shadow-md transition-colors"
+       style="font-family: 'Playfair Display', serif"
       >
         Start Reading
       </button>
@@ -82,7 +85,7 @@
             </h3>
             <ul class="space-y-5 text-gray-700">
               <li class="flex items-start gap-3 text-lg">
-                <span class="mt-2.5 w-1.5 h-1.5 bg-[#3D1A1A] rounded-full flex-shrink-0"></span>
+                <span class="mt-2.5 w-1.5 h-1.5 bg-[#FAFAFA] rounded-full flex-shrink-0"></span>
                 <span>Browse and discover novels across multiple genres</span>
               </li>
               <li class="flex items-start gap-3 text-lg">

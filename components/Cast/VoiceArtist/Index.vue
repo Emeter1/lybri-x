@@ -2,20 +2,25 @@
 </script>
 
 <template>
-  <div class="bg-[#FAFAFA] min-h-screen">
+  <div class="bg-white min-h-screen"
+  style="font-family: 'Playfair Display', serif"
+  >
     <!-- Hero Section -->
-    <div class="py-20 px-6 text-center">
+    <div class="bg-[#F2F2F2] py-8 px-6 mb-7 text-center">
       <h1
-        class="text-5xl md:text-6xl font-extrabold text-[#3D1A1A] mb-4"
+        class="text-5xl md:text-6xl font-bold text-[#3D1A1A] mb-1"
         style="font-family: 'Playfair Display', serif"
       >
         The Voice Artist’s Cast
       </h1>
-      <p class="text-gray-500 text-lg md:text-xl font-medium mb-8 opacity-80 max-w-3xl mx-auto">
+      <p class="text-gray-800 text-lg md:text-xl font-medium mb-5 opacity-80 max-w-3xl mx-auto" 
+      >
+        
         A space for voice artists to give stories a voice and be recognized for their craft.
       </p>
       <button
-        class="bg-yellow-400 hover:bg-yellow-500 text-[#3D1A1A] font-bold py-3 px-12 rounded-lg shadow-md transition-colors"
+        class="bg-yellow-400 hover:bg-yellow-500 text-[#3D1A1A] font-bold py-2 px-10 rounded-lg shadow-md transition-colors"
+      
       >
         Start Recording
       </button>
@@ -72,7 +77,7 @@
 
         <!-- Right Column (Grey Box) -->
         <div>
-          <div class="bg-[#F3F3F3] p-8 md:p-10 rounded-xl border border-gray-200/50 shadow-sm">
+          <div class="bg-[#F2F2F2] p-8 md:p-10 rounded-sm border border-gray-200/50 shadow-sm">
             <h3
               class="text-2xl font-bold text-[#3D1A1A] mb-8"
               style="font-family: 'Playfair Display', serif"
